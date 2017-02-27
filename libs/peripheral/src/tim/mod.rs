@@ -1,0 +1,14 @@
+pub mod tim1;
+pub mod tim8;
+pub mod tim2;
+pub mod tim3;
+pub mod tim4;
+pub mod tim5;
+pub mod tim9;
+pub mod tim12;
+pub mod tim10;
+pub mod tim11;
+pub mod tim13;
+pub mod tim14;
+pub mod tim6;
+pub mod tim7;

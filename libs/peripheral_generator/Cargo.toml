@@ -1,0 +1,12 @@
+[package]
+name = "peripheral_generator"
+version = "0.1.0"
+authors = ["Victor Koenders <victor.koenders@gmail.com>"]
+
+[dependencies]
+svd-parser = "*"
+itertools = "*"
+xmltree = "*"
+utils = { path = "../utils" }
+regex = "*"
+lazy_static = "*"

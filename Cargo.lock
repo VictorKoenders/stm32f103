@@ -1,0 +1,18 @@
+[root]
+name = "rust_stm32f103"
+version = "0.1.0"
+dependencies = [
+ "f103 0.1.0",
+]
+
+[[package]]
+name = "f103"
+version = "0.1.0"
+dependencies = [
+ "peripheral 0.1.0",
+]
+
+[[package]]
+name = "peripheral"
+version = "0.1.0"
+

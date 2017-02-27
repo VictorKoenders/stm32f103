@@ -1,0 +1,11 @@
+[package]
+name = "utils"
+version = "0.1.0"
+authors = ["Victor Koenders <victor.koenders@gmail.com>"]
+
+[dependencies]
+
+[features]
+default = ["std"]
+std = []
+none = []

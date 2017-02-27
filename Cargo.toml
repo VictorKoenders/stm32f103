@@ -1,0 +1,11 @@
+[package]
+name = "rust_stm32f103"
+version = "0.1.0"
+authors = ["victor.koenders <victor.koenders@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+f103 = { path = "libs/f103" }
+
+[profile.release]
+# lto = true
