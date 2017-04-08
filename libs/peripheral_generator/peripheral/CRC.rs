@@ -1,12 +1,6 @@
 // CRC
 // CRC calculation unit
 pub const ADDRESS: u32 = 0x40023000;
-pub mod DR {
-}
-pub mod IDR {
-}
-pub mod CR {
-}
 /*
 Peripheral {
     name: "CRC",

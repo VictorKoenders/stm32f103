@@ -14,39 +14,16 @@ macro_rules! bkpt {
     };
 }
 
-extern crate f103;
-use f103::peripheral;
 pub mod exceptions;
 pub mod interrupts;
-mod timer;
 
 
 #[inline(never)]
 #[no_mangle]
 #[export_name = "main"]
 pub fn main() -> ! {
-    let timer = timer::Timer::new();
-    let mut ahbenr = peripheral::rcc::apb2enr::modify();
-    ahbenr.iopben = true;
-    ahbenr.save();
-
-    //let value = 0x4444_4444 | (0b10 << 20) | (0b)
-    let mut crh = peripheral::gpio::b::crh::modify();
-    crh[2] = 0b11;
-    crh[3] = 0b00;
-    crh.save();
-
-    peripheral::gpio::b::bsrr::bs(9, true);
-
-    loop {
-        timer.sleep_ms(500);
-        peripheral::gpio::b::brr::br(9, true);
-        //bkpt!();
-        timer.sleep_ms(500);
-        peripheral::gpio::b::bsrr::bs(9, true);
-        //bkpt!();
-    }
-    //println!("Hello, world!");
+    bkpt!();
+    loop {}
 }
 
 #[repr(C)]
@@ -72,9 +49,6 @@ pub struct StackFrame {
 #[doc(hidden)]
 #[export_name = "_default_exception_handler"]
 pub extern "C" fn default_handler(_sf: &StackFrame) -> ! {
-    //let exception = f3::exception::Exception::current();
-    //iprintln!("EXCEPTION {:?} @ PC=0x{:08x}", exception, sf.pc);
-
     bkpt!();
 
     loop {}

@@ -1,30 +1,6 @@
 // TIM14
 // General purpose timer
 pub const ADDRESS: u32 = 0x40002000;
-pub mod CR1 {
-}
-pub mod CR2 {
-}
-pub mod DIER {
-}
-pub mod SR {
-}
-pub mod EGR {
-}
-pub mod CCMR1_Output {
-}
-pub mod CCMR1_Input {
-}
-pub mod CCER {
-}
-pub mod CNT {
-}
-pub mod PSC {
-}
-pub mod ARR {
-}
-pub mod CCR1 {
-}
 /*
 Peripheral {
     name: "TIM14",

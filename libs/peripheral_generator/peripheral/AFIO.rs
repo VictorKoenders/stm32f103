@@ -1,20 +1,6 @@
 // AFIO
 // Alternate function I/O
 pub const ADDRESS: u32 = 0x40010000;
-pub mod EVCR {
-}
-pub mod MAPR {
-}
-pub mod EXTICR1 {
-}
-pub mod EXTICR2 {
-}
-pub mod EXTICR3 {
-}
-pub mod EXTICR4 {
-}
-pub mod MAPR2 {
-}
 /*
 Peripheral {
     name: "AFIO",

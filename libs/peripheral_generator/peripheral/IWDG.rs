@@ -1,14 +1,6 @@
 // IWDG
 // Independent watchdog
 pub const ADDRESS: u32 = 0x40003000;
-pub mod KR {
-}
-pub mod PR {
-}
-pub mod RLR {
-}
-pub mod SR {
-}
 /*
 Peripheral {
     name: "IWDG",

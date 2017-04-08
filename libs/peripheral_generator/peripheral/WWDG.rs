@@ -1,12 +1,6 @@
 // WWDG
 // Window watchdog
 pub const ADDRESS: u32 = 0x40002C00;
-pub mod CR {
-}
-pub mod CFR {
-}
-pub mod SR {
-}
 /*
 Peripheral {
     name: "WWDG",

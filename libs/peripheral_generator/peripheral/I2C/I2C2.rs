@@ -1,24 +1,6 @@
 // I2C2
 // Inter integrated circuit
 pub const ADDRESS: u32 = 0x40005800;
-pub mod CR1 {
-}
-pub mod CR2 {
-}
-pub mod OAR1 {
-}
-pub mod OAR2 {
-}
-pub mod DR {
-}
-pub mod SR1 {
-}
-pub mod SR2 {
-}
-pub mod CCR {
-}
-pub mod TRISE {
-}
 /*
 Peripheral {
     name: "I2C2",

@@ -1,10 +1,6 @@
 // DBG
 // Debug support
 pub const ADDRESS: u32 = 0xE0042000;
-pub mod IDCODE {
-}
-pub mod CR {
-}
 /*
 Peripheral {
     name: "DBG",

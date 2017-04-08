@@ -1,50 +1,6 @@
 // TIM8
 // Advanced timer
 pub const ADDRESS: u32 = 0x40013400;
-pub mod CR1 {
-}
-pub mod CR2 {
-}
-pub mod SMCR {
-}
-pub mod DIER {
-}
-pub mod SR {
-}
-pub mod EGR {
-}
-pub mod CCMR1_Output {
-}
-pub mod CCMR1_Input {
-}
-pub mod CCMR2_Output {
-}
-pub mod CCMR2_Input {
-}
-pub mod CCER {
-}
-pub mod CNT {
-}
-pub mod PSC {
-}
-pub mod ARR {
-}
-pub mod CCR1 {
-}
-pub mod CCR2 {
-}
-pub mod CCR3 {
-}
-pub mod CCR4 {
-}
-pub mod DCR {
-}
-pub mod DMAR {
-}
-pub mod RCR {
-}
-pub mod BDTR {
-}
 /*
 Peripheral {
     name: "TIM8",

@@ -1,24 +1,6 @@
 // SPI3
 // Serial peripheral interface
 pub const ADDRESS: u32 = 0x40003C00;
-pub mod CR1 {
-}
-pub mod CR2 {
-}
-pub mod SR {
-}
-pub mod DR {
-}
-pub mod CRCPR {
-}
-pub mod RXCRCR {
-}
-pub mod TXCRCR {
-}
-pub mod I2SCFGR {
-}
-pub mod I2SPR {
-}
 /*
 Peripheral {
     name: "SPI3",

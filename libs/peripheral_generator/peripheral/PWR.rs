@@ -1,10 +1,6 @@
 // PWR
 // Power control
 pub const ADDRESS: u32 = 0x40007000;
-pub mod CR {
-}
-pub mod CSR {
-}
 /*
 Peripheral {
     name: "PWR",

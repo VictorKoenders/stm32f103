@@ -5,7 +5,8 @@ authors = ["victor.koenders <victor.koenders@gmail.com>"]
 build = "build.rs"
 
 [dependencies]
-f103 = { path = "libs/f103" }
+# f103 = { path = "libs/f103" }
+peripheral = { path = "libs/peripheral" }
 
 [profile.release]
 # lto = true

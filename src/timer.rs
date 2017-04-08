@@ -1,5 +1,5 @@
-use f103::peripheral::tim::tim2;
-use f103::peripheral::rcc;
+use peripheral::tim::tim2;
+use peripheral::rcc;
 
 pub struct Timer{}
 

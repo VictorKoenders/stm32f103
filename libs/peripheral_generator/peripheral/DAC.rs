@@ -1,32 +1,6 @@
 // DAC
 // Digital to analog converter
 pub const ADDRESS: u32 = 0x40007400;
-pub mod CR {
-}
-pub mod SWTRIGR {
-}
-pub mod DHR12R1 {
-}
-pub mod DHR12L1 {
-}
-pub mod DHR8R1 {
-}
-pub mod DHR12R2 {
-}
-pub mod DHR12L2 {
-}
-pub mod DHR8R2 {
-}
-pub mod DHR12RD {
-}
-pub mod DHR12LD {
-}
-pub mod DHR8RD {
-}
-pub mod DOR1 {
-}
-pub mod DOR2 {
-}
 /*
 Peripheral {
     name: "DAC",

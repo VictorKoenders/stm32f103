@@ -4,6 +4,6 @@
 #[cfg(test)] extern crate test;
 
 #[cfg(feature = "std")]
-mod iter_slice_before_after;
+mod iter_mut_slice_before_after;
 #[cfg(feature = "std")]
-pub use iter_slice_before_after::iter_slice_before_after;
+pub use iter_mut_slice_before_after::iter_mut_slice_before_after;

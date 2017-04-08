@@ -1,6 +1,5 @@
 use std::collections::HashMap;
 use svd_parser::Peripheral;
-use std::fmt::Arguments;
 use std::str::FromStr;
 use regex::Regex;
 
@@ -22,15 +21,18 @@ pub struct GeneratorOutput {
 pub struct OutputBuilder(Vec<Part>);
 
 pub enum Part {
-    Comment(Arguments),
-    Line(Arguments),
-    BlockStart(Arguments),
+    Comment(String),
+    Line(String),
+    BlockStart(String),
     BlockEnd
 }
 
 impl OutputBuilder {
     pub fn add(&mut self, part: Part) {
         self.0.push(part);
+    }
+    pub fn addComment(&mut self, str: String) {
+        self.0.push(Part::Comment(str));
     }
 
     pub fn to_string(self) -> String {
@@ -39,7 +41,7 @@ impl OutputBuilder {
 
         for part in self.0.into_iter() {
             match part {
-                Part::Comment(line) => str += &format!("// {}{}\n", indent, OutputBuilder::to_single_line(line)),
+                Part::Comment(line) => str += &format!("{}// {}\n", indent, OutputBuilder::to_single_line(line)),
                 Part::Line(line) => str += &format!("{}{}\n", indent, line),
                 Part::BlockStart(line) => {
                     str += &format!("{}{} {{\n", indent, line);
@@ -56,8 +58,8 @@ impl OutputBuilder {
         str
     }
 
-    fn to_single_line(string: Arguments) -> String {
-        WHITESPACE_REGEX.replace_all(&::std::fmt::format(string), " ").into_owned()
+    fn to_single_line(string: String) -> String {
+        WHITESPACE_REGEX.replace_all(&string, " ").into_owned()
     }
 }
 

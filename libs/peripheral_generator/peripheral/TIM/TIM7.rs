@@ -1,22 +1,6 @@
 // TIM7
 // Basic timer
 pub const ADDRESS: u32 = 0x40001400;
-pub mod CR1 {
-}
-pub mod CR2 {
-}
-pub mod DIER {
-}
-pub mod SR {
-}
-pub mod EGR {
-}
-pub mod CNT {
-}
-pub mod PSC {
-}
-pub mod ARR {
-}
 /*
 Peripheral {
     name: "TIM7",

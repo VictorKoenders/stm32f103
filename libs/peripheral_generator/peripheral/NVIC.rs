@@ -1,60 +1,6 @@
 // NVIC
 // Nested Vectored Interrupt Controller
 pub const ADDRESS: u32 = 0xE000E000;
-pub mod ICTR {
-}
-pub mod STIR {
-}
-pub mod ISER0 {
-}
-pub mod ISER1 {
-}
-pub mod ICER0 {
-}
-pub mod ICER1 {
-}
-pub mod ISPR0 {
-}
-pub mod ISPR1 {
-}
-pub mod ICPR0 {
-}
-pub mod ICPR1 {
-}
-pub mod IABR0 {
-}
-pub mod IABR1 {
-}
-pub mod IPR0 {
-}
-pub mod IPR1 {
-}
-pub mod IPR2 {
-}
-pub mod IPR3 {
-}
-pub mod IPR4 {
-}
-pub mod IPR5 {
-}
-pub mod IPR6 {
-}
-pub mod IPR7 {
-}
-pub mod IPR8 {
-}
-pub mod IPR9 {
-}
-pub mod IPR10 {
-}
-pub mod IPR11 {
-}
-pub mod IPR12 {
-}
-pub mod IPR13 {
-}
-pub mod IPR14 {
-}
 /*
 Peripheral {
     name: "NVIC",

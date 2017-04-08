@@ -1,46 +1,6 @@
 // ADC1
 // Analog to digital converter
 pub const ADDRESS: u32 = 0x40012400;
-pub mod SR {
-}
-pub mod CR1 {
-}
-pub mod CR2 {
-}
-pub mod SMPR1 {
-}
-pub mod SMPR2 {
-}
-pub mod JOFR1 {
-}
-pub mod JOFR2 {
-}
-pub mod JOFR3 {
-}
-pub mod JOFR4 {
-}
-pub mod HTR {
-}
-pub mod LTR {
-}
-pub mod SQR1 {
-}
-pub mod SQR2 {
-}
-pub mod SQR3 {
-}
-pub mod JSQR {
-}
-pub mod JDR1 {
-}
-pub mod JDR2 {
-}
-pub mod JDR3 {
-}
-pub mod JDR4 {
-}
-pub mod DR {
-}
 /*
 Peripheral {
     name: "ADC1",

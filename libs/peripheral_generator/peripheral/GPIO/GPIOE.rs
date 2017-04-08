@@ -1,20 +1,6 @@
 // GPIOE
 // General purpose I/O
 pub const ADDRESS: u32 = 0x40011800;
-pub mod CRL {
-}
-pub mod CRH {
-}
-pub mod IDR {
-}
-pub mod ODR {
-}
-pub mod BSRR {
-}
-pub mod BRR {
-}
-pub mod LCKR {
-}
 /*
 Peripheral {
     name: "GPIOE",

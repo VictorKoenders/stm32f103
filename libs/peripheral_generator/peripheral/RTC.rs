@@ -1,26 +1,6 @@
 // RTC
 // Real time clock
 pub const ADDRESS: u32 = 0x40002800;
-pub mod CRH {
-}
-pub mod CRL {
-}
-pub mod PRLH {
-}
-pub mod PRLL {
-}
-pub mod DIVH {
-}
-pub mod DIVL {
-}
-pub mod CNTH {
-}
-pub mod CNTL {
-}
-pub mod ALRH {
-}
-pub mod ALRL {
-}
 /*
 Peripheral {
     name: "RTC",

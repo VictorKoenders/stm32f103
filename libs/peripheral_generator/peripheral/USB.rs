@@ -1,32 +1,6 @@
 // USB
 // Universal serial bus full-speed device interface
 pub const ADDRESS: u32 = 0x40005C00;
-pub mod EP0R {
-}
-pub mod EP1R {
-}
-pub mod EP2R {
-}
-pub mod EP3R {
-}
-pub mod EP4R {
-}
-pub mod EP5R {
-}
-pub mod EP6R {
-}
-pub mod EP7R {
-}
-pub mod CNTR {
-}
-pub mod ISTR {
-}
-pub mod FNR {
-}
-pub mod DADDR {
-}
-pub mod BTABLE {
-}
 /*
 Peripheral {
     name: "USB",

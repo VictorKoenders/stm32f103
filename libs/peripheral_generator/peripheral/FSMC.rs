@@ -1,60 +1,6 @@
 // FSMC
 // Flexible static memory controller
 pub const ADDRESS: u32 = 0xA0000000;
-pub mod BCR1 {
-}
-pub mod BTR1 {
-}
-pub mod BCR2 {
-}
-pub mod BTR2 {
-}
-pub mod BCR3 {
-}
-pub mod BTR3 {
-}
-pub mod BCR4 {
-}
-pub mod BTR4 {
-}
-pub mod PCR2 {
-}
-pub mod SR2 {
-}
-pub mod PMEM2 {
-}
-pub mod PATT2 {
-}
-pub mod ECCR2 {
-}
-pub mod PCR3 {
-}
-pub mod SR3 {
-}
-pub mod PMEM3 {
-}
-pub mod PATT3 {
-}
-pub mod ECCR3 {
-}
-pub mod PCR4 {
-}
-pub mod SR4 {
-}
-pub mod PMEM4 {
-}
-pub mod PATT4 {
-}
-pub mod PIO4 {
-}
-pub mod BWTR1 {
-}
-pub mod BWTR2 {
-}
-pub mod BWTR3 {
-}
-pub mod BWTR4 {
-}
 /*
 Peripheral {
     name: "FSMC",

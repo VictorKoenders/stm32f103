@@ -1,26 +1,6 @@
 // RCC
 // Reset and clock control
 pub const ADDRESS: u32 = 0x40021000;
-pub mod CR {
-}
-pub mod CFGR {
-}
-pub mod CIR {
-}
-pub mod APB2RSTR {
-}
-pub mod APB1RSTR {
-}
-pub mod AHBENR {
-}
-pub mod APB2ENR {
-}
-pub mod APB1ENR {
-}
-pub mod BDCR {
-}
-pub mod CSR {
-}
 /*
 Peripheral {
     name: "RCC",

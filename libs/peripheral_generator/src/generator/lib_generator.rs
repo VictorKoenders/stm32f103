@@ -16,14 +16,14 @@ impl LibGenerator {
 
 impl Generator for LibGenerator {
     fn generate(&self, builder: &mut OutputBuilder) {
-        builder.add(Part::Line(format_args!("#![no_std]")));
-        builder.add(Part::Line(format_args!("")));
+        builder.add(Part::Line("#![no_std]".to_owned()));
+        builder.add(Part::Line("".to_owned()));
         
         for peripheral_name in self.device.peripherals
             .iter()
             .filter_map(|p| p.group_name.clone())
             .unique() {
-            builder.add(Part::Line(format_args!("pub mod {};", peripheral_name.to_lowercase())));
+            builder.add(Part::Line(format!("pub mod {};", peripheral_name.to_lowercase())));
         }
     }
 }

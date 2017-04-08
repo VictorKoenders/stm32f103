@@ -1,42 +1,6 @@
 // SDIO
 // Secure digital input/output interface
 pub const ADDRESS: u32 = 0x40018000;
-pub mod POWER {
-}
-pub mod CLKCR {
-}
-pub mod ARG {
-}
-pub mod CMD {
-}
-pub mod RESPCMD {
-}
-pub mod RESPI1 {
-}
-pub mod RESP2 {
-}
-pub mod RESP3 {
-}
-pub mod RESP4 {
-}
-pub mod DTIMER {
-}
-pub mod DLEN {
-}
-pub mod DCTRL {
-}
-pub mod DCOUNT {
-}
-pub mod STA {
-}
-pub mod ICR {
-}
-pub mod MASK {
-}
-pub mod FIFOCNT {
-}
-pub mod FIFO {
-}
 /*
 Peripheral {
     name: "SDIO",

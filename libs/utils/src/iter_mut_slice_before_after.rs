@@ -1,4 +1,4 @@
-pub fn iter_slice_before_after<T, U>(slice: &mut [T], mut callback: U)
+pub fn iter_mut_slice_before_after<T, U>(slice: &mut [T], mut callback: U)
     where U : FnMut(&mut [T], &mut T, &mut [T]) {
     for i in 0..slice.len() {
         let (before, tmp) = slice.split_at_mut(i);
@@ -14,7 +14,7 @@ fn bench(b: &mut test::Bencher){
     let mut vec = [0usize;1000];
     for i in 0..1000 { vec[i] = i; }
     b.iter(||
-        iter_slice_before_after(&mut vec, |before, item, after| {
+        iter_mut_slice_before_after(&mut vec, |before, item, after| {
             test::black_box(before);
             test::black_box(item);
             test::black_box(after);
@@ -28,7 +28,7 @@ fn test_current(){
     let clone = v.clone();
     let mut index = 0;
     let len = v.len();
-    iter_slice_before_after(&mut v, |before, item, after| {
+    iter_mut_slice_before_after(&mut v, |before, item, after| {
         assert!(before.len() == index);
         assert_eq!(*item, clone[index]);
         assert!(after.len() == len - index - 1);
@@ -46,7 +46,7 @@ fn test_before(){
     let clone = v.clone();
     let mut index = 0;
     let len = v.len();
-    iter_slice_before_after(&mut v, |before, item, after| {
+    iter_mut_slice_before_after(&mut v, |before, item, after| {
         assert!(before.len() == index);
         assert_eq!(*item, clone[index]);
         assert!(after.len() == len - index - 1);
@@ -67,7 +67,7 @@ fn test_after(){
     let clone = v.clone();
     let mut index = 0;
     let len = v.len();
-    iter_slice_before_after(&mut v, |before, item, after| {
+    iter_mut_slice_before_after(&mut v, |before, item, after| {
         assert!(before.len() == index);
         if index == 0 { assert_eq!(*item, clone[index]); }
         else { assert_eq!(*item, clone[index] - 1); }
@@ -85,7 +85,7 @@ fn test_all(){
     let mut v = [1, 2, 3, 4];
     let mut index = 0;
     let len = v.len();
-    iter_slice_before_after(&mut v, |before, item, after| {
+    iter_mut_slice_before_after(&mut v, |before, item, after| {
         assert!(before.len() == index);
         if index == 0 { assert_eq!(*item, 1); }
         else { assert_eq!(*item, index + 2); }

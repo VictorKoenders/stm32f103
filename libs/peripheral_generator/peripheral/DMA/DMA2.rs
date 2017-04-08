@@ -1,66 +1,6 @@
 // DMA2
 // DMA controller
 pub const ADDRESS: u32 = 0x40020400;
-pub mod ISR {
-}
-pub mod IFCR {
-}
-pub mod CCR1 {
-}
-pub mod CNDTR1 {
-}
-pub mod CPAR1 {
-}
-pub mod CMAR1 {
-}
-pub mod CCR2 {
-}
-pub mod CNDTR2 {
-}
-pub mod CPAR2 {
-}
-pub mod CMAR2 {
-}
-pub mod CCR3 {
-}
-pub mod CNDTR3 {
-}
-pub mod CPAR3 {
-}
-pub mod CMAR3 {
-}
-pub mod CCR4 {
-}
-pub mod CNDTR4 {
-}
-pub mod CPAR4 {
-}
-pub mod CMAR4 {
-}
-pub mod CCR5 {
-}
-pub mod CNDTR5 {
-}
-pub mod CPAR5 {
-}
-pub mod CMAR5 {
-}
-pub mod CCR6 {
-}
-pub mod CNDTR6 {
-}
-pub mod CPAR6 {
-}
-pub mod CMAR6 {
-}
-pub mod CCR7 {
-}
-pub mod CNDTR7 {
-}
-pub mod CPAR7 {
-}
-pub mod CMAR7 {
-}
 /*
 Peripheral {
     name: "DMA2",

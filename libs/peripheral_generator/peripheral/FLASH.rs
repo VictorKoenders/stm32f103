@@ -1,22 +1,6 @@
 // FLASH
 // FLASH
 pub const ADDRESS: u32 = 0x40022000;
-pub mod ACR {
-}
-pub mod KEYR {
-}
-pub mod OPTKEYR {
-}
-pub mod SR {
-}
-pub mod CR {
-}
-pub mod AR {
-}
-pub mod OBR {
-}
-pub mod WRPR {
-}
 /*
 Peripheral {
     name: "FLASH",

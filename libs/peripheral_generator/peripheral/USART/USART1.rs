@@ -1,20 +1,6 @@
 // USART1
 // Universal synchronous asynchronous receiver transmitter
 pub const ADDRESS: u32 = 0x40013800;
-pub mod SR {
-}
-pub mod DR {
-}
-pub mod BRR {
-}
-pub mod CR1 {
-}
-pub mod CR2 {
-}
-pub mod CR3 {
-}
-pub mod GTPR {
-}
 /*
 Peripheral {
     name: "USART1",

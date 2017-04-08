@@ -1,18 +1,6 @@
 // EXTI
 // EXTI
 pub const ADDRESS: u32 = 0x40010400;
-pub mod IMR {
-}
-pub mod EMR {
-}
-pub mod RTSR {
-}
-pub mod FTSR {
-}
-pub mod SWIER {
-}
-pub mod PR {
-}
 /*
 Peripheral {
     name: "EXTI",

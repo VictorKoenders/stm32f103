@@ -1,3 +1,6 @@
+[build]
+# target = "thumbv7em-none-eabihf"
+
 [target.thumbv7em-none-eabihf]
 rustflags = [
   "-C",
@@ -5,10 +8,3 @@ rustflags = [
   "-C",
   "link-arg=-nostartfiles",
 ]
-
-#[source.crates-io]
-#registry = 'https://github.com/rust-lang/crates.io-index'
-#replace-with = 'vendored-sources'
-
-#[source.vendored-sources]
-#directory = 'D:\Development\Personal\rust_stm32\vendor'
